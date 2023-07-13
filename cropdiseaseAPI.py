@@ -19,7 +19,7 @@ async def download_model():
     drive = GoogleDrive(gauth)
     file_id = '1WHESZSDimcJ9WMsYN7wTiZUuURncvJUt'
     file = drive.CreateFile({'id': file_id})
-    file.GetContentFile('model.pth')
+    file.GetContentFile('cropdiseasemodel.pth')
 
     return {"message": "Model downloaded successfully!"}
 
